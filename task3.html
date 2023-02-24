@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3.css">
+    <script src="task3.js"></script>
+</head>
+
+<body>
+    <header class="plz">
+        <ul class="nav">
+            <li class="navbar" id="element1">Home</li>
+            <li class="navbar" id="element2">Login</li>
+            <li class="navbar" id="element3">Sign Up</li>
+        </ul>
+    </header>
+    
+    <div class="transbox">
+
+        <center class="same">
+            <div id="box1" onmouseover="this.style.opacity=1.1" onmouseout="this.style.opacity=0.7">
+
+                    <b>
+                        <h3 id="header">Input Temperature</h3>
+                    </b>
+                    <input type="number" id="number">
+                    <br>
+                    <select name="temp" id="sigma">
+                        <option>
+                            <h1>Celsius</h1>
+                        </option>
+                        <option>
+                            <h1>Farenhit</h1>
+                        </option>
+                        <option>
+                            <h1>Kelvin</h1>
+                        </option>
+                    </select>
+                    <br>
+
+            </div>
+            <div id="box2" onmouseover="this.style.opacity=1.1" onmouseout="this.style.opacity=0.7">
+                    <b>
+                        <h3 style="font-size: 400%;">Output Chamber</h3>
+                    </b>
+                    <div id="display"></div>
+                    <select name="temp1" id="delta">
+                        <option>
+                            <h1>Celsius</h1>
+                        </option>
+                        <option>
+                            <h1>Farenhit</h1>
+                        </option>
+                        <option>
+                            <h1>Kelvin</h1>
+                        </option>
+                    </select><br>
+                    <button id="button" onclick="get_value()">Convert</button>
+            </div>
+        </center>
+    </div>
+</body>
+
+</html>
